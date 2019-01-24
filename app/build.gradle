@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlinx-serialization'
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -35,4 +37,6 @@ dependencies {
     implementation "org.jetbrains.anko:anko-coroutines:$anko_version"
     // Anko Commons
     implementation "org.jetbrains.anko:anko-commons:$anko_version"
+    // serializacion -- JSON
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.10.0"
 }
